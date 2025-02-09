@@ -1,0 +1,14 @@
+# Ignore virtual environments
+.venv/
+
+# Ignore node_modules inside frontend
+/frontend/node_modules/
+
+# Logs
+*.log
+
+# Environment variables
+.env
+
+# MacOS system files
+.DS_Store
