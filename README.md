@@ -50,8 +50,8 @@ Follow these instructions to set up and run the project locally.
 1. **Clone the Repository:**
 
    ```bash
-   git clone <repository-url>
-   cd mood-melody/backend
+   git clone https://github.com/satorugojo3795/Mood_Based_Music_Recommendation_System.git
+   cd Mood_Based_Music_Recommendation_System/backend
    ```
 
 2. **Create a Virtual Environment:**
@@ -91,7 +91,7 @@ Follow these instructions to set up and run the project locally.
    Open a new terminal window and change to the frontend directory:
 
    ```bash
-   cd mood-melody/frontend
+   cd Mood_Based_Music_Recommendation_System/frontend
    ```
 
 2. **Install Frontend Dependencies:**
@@ -157,4 +157,8 @@ This project is licensed under the [MIT License](LICENSE).
 - [React](https://reactjs.org/)
 - [PyTorch](https://pytorch.org/)
 - [OpenCV](https://opencv.org/)
+- https://medium.com/@UTMSBA24/mood-based-music-recommendation-system-5afb8bb90082
+- Russell, J. A. (1980). A circumplex model of affect. Journal of Personality and Social Psychology, 39(6), 1161–1178.
+- Russell, J. A. (2003). Core affect and the psychological construction of emotion. Psychological Review, 110(1), 145–172.
+- Posner, J., Russell, J. A., & Peterson, B. S. (2005). The circumplex model of affect. Learning and Individual Differences, 39, 1161–1178.
 
