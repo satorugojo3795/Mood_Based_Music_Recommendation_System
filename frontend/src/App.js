@@ -11,6 +11,9 @@ function App() {
   const [error, setError] = useState(null);
   const [capturing, setCapturing] = useState(false);
 
+  // Backend URL from environment variables
+  const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || "http://localhost:8000";
+
   // Request access to the webcam when the component mounts.
   useEffect(() => {
     async function getCamera() {
@@ -33,6 +36,7 @@ function App() {
     const video = videoRef.current;
     const canvas = canvasRef.current;
     const context = canvas.getContext('2d');
+
     // Set the canvas size to match the video dimensions.
     canvas.width = video.videoWidth;
     canvas.height = video.videoHeight;
@@ -45,12 +49,13 @@ function App() {
         setCapturing(false);
         return;
       }
+
       // Prepare FormData with the captured image.
       const formData = new FormData();
       formData.append('file', blob, 'snapshot.jpg');
 
       try {
-        const response = await fetch('http://localhost:8000/detect', {
+        const response = await fetch(`${BACKEND_URL}/detect`, {
           method: 'POST',
           body: formData,
         });
